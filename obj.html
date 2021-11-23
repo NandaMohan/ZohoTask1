@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+const subtract = {
+"o_left" : "a",
+"o_right": "b",
+printStatement : function() {
+console.log(`${this.o_left} is subtracted from ${this.o_right}`);
+}
+}
+const add = {
+"o_left" : "a",
+"o_right": "b",
+printStatement1 : function() {
+console.log(`${this.o_left} is added to ${this.o_right}`);
+}
+}
+
+const Multiply = {
+"o_left" : "a",
+"o_right": "b",
+printStatement2 : function() {
+console.log(`${this.o_left} is multiplied by ${this.o_right}`);
+}
+}
+
+const divide = {
+"o_left" : "a",
+"o_right": "b",
+"expression" : "o_left - o_right",
+printStatement3 : function(o_left,o_right) {
+console.log(`${this.o_left} is divided by ${this.o_right}`);
+}
+}
+
+
+const exp = Object.create(divide)
+exp.o_left  = "x"
+exp.o_right  = "y"
+exp.printStatement3()
+
+</script>
+</body>
+</html>
