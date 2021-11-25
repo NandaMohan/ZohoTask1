@@ -1,0 +1,38 @@
+const Json = {
+
+    "Statements" :  {
+
+        "/" : {
+            "oleft" : "${this.a}",
+            "oright": "${this.b}",
+            "expression" : "div(${this.a},${this.b})",
+            "statement" : "${this.a} is divided by ${this.b}"
+         },
+
+         "*" :{
+
+           
+            "oleft" : "${this.a}",
+            "oright": "${this.b}",
+            "expression" : "product(${this.a},${this.b})",
+            "statement" : "${this.a} is multiplied by ${this.b}"
+         },
+       
+
+        "+" : {
+
+            "oleft" : "${this.a}",
+            "oright": "${this.b}",
+            "expression" : "sum(${this.a},${this.b})",
+            "statement" : "${this.a} is added to ${this.b}"
+        },
+       
+        "-" : {
+            "oleft" : "${this.a}",
+            "oright": "${this.b}",
+            "expression" : "diff(${this.b},${this.a})",
+            "statement" : "${this.b} is subtracted from ${this.a}"
+        }      
+    }
+  }
+
